@@ -56,6 +56,14 @@ print(f"Average Change: ${round(dfrows_avg, 2)}")
 print(f"Greatest Increase in Profits: {max_month[0]} (${max_val}.00)")
 print(f"Greatest Decrease in Profits: {min_month[0]} (${min_val}.00)")
 
-# f = open("pybank_results.txt", 'w')
-# python main.py > pybank_results.txt
-# f.close
+f = open("pybank_results.txt", 'w')
+f.write(f"Total Months: {count}\n")
+f = open("pybank_results.txt", 'a')
+f.write(f"Total Sum: ${total_sum}.00\n")
+f = open("pybank_results.txt", 'a')
+f.write(f"Average Change: ${round(dfrows_avg, 2)}\n")
+f = open("pybank_results.txt", 'a')
+f.write(f"Greatest Increase in Profits: {max_month[0]} (${max_val}.00)\n")
+f = open("pybank_results.txt", 'a')
+f.write(f"Greatest Decrease in Profits: {min_month[0]} (${min_val}.00)\n")
+f.close
